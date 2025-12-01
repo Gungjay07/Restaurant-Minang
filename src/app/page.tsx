@@ -4,12 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { Poltawski_Nowy } from "next/font/google";
 import SearchBar from "../../components/searchBar";
+import MenuBar from "../../components/menuBar";
 
 const Poltawski = Poltawski_Nowy({
   subsets: ["latin"],
   style: ["italic"],
   weight: ["400", "700"],
 });
+
 const handleSearch = (text) => {
   console.log("Search:", text);
 };
@@ -33,6 +35,10 @@ export default function HomePage() {
       <div className="mt-10">
         <SearchBar onSearch={handleSearch}></SearchBar>
       </div>
+      <div className="mt-10">
+        <MenuBar></MenuBar>
+      </div>
+
     </div>
   );
 }
