@@ -17,7 +17,7 @@ const handleSearch = (text) => {
 };
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-gradient-to-t from-white-800 via-white-300 to-yellow-400 text-yellow p-4">
+    <div className="min-h-screen bg-gradient-to-t from-orange-400 via-yellow-400 to-yellow-400 text-yellow p-4">
       <div className="text-black mx-6 mt-5 relative flex items-center gap-2">
         <Image
           src="/LogoNew.png"
