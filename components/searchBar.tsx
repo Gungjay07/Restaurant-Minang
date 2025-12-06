@@ -14,7 +14,7 @@ export default function SearchBar({ onSearch }) {
 
   return (
     <form onSubmit={handleSubmit} className="w-full max-w-md mx-auto relative">
-      <IconSearch className="absolute mx-3 mt-2 text-gray-600" />
+      <IconSearch className="absolute mx-3 mt-2 text-black" />
       <input
         type="text"
         placeholder="Cari Makanan Anda Disini..."
