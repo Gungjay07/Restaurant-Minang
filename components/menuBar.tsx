@@ -64,7 +64,7 @@ export default function MenuBar() {
         {menu.map((menu) => (
           <div className="bg-amber-50 rounded-xl">
             <Image
-              className="m-5"
+              className="mx-8 my-8"
               src="/LogoNew.png"
               alt="Rumah Makan Kurnia Jaya"
               width={120}

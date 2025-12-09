@@ -26,7 +26,7 @@ export default function DetailPesanan() {
   return (
     <div className="min-h-screen bg-gradient-to-t from-orange-400 via-yellow-400 to-yellow-400 text-yellow p-4">
       <Link href={"/"}><IconArrowBack className="text-black"></IconArrowBack></Link>
-      <div className="bg-amber-50 rounded-2xl">
+      <div className="bg-amber-50 rounded-2xl h-120">
          <div className="mt-10 flex justify-center bg-amber-50 rounded-2xl">
         <Image
           src="/LogoNew.png"
@@ -42,8 +42,8 @@ export default function DetailPesanan() {
             <textarea name="masukan makanan" id="masukan makanan" placeholder="  Catatan..." className="w-full h-30 border border-none focus:outline-none resize-none rounded-sm shadow-2xl text-l text-black p-2"></textarea>
         </div>
         <div className="mt-5 flex">
-          <h2 className={`${crimson.className} text-xl text-black px-5 py-5`}>Rp27.000</h2>
-          <div className="flex ml-30 gap-5">
+          <h2 className={`${crimson.className} text-xl text-black px-6 py-5`}>Rp27.000</h2>
+          <div className="flex ml-45 gap-5">
             <button className="">
             <IconMinus className="border border-yellow-400 text-black text-sm"/>
           </button>
@@ -55,7 +55,9 @@ export default function DetailPesanan() {
         </div>
       </div>
          <div className="flex px-10 py-10 items-center justify-center">
-            <button className="bg-[#FDE059] text-black px-8 py-3 rounded-xl text-lg font-bold">Simpan</button>
+              <Link href={"/daftarPesanan"}>
+                <button className="bg-[#FDE059] text-black px-8 py-3 rounded-xl text-lg font-bold">Simpan</button>
+              </Link>
           </div>
     </div>
   );
